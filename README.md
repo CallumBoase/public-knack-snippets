@@ -1,4 +1,4 @@
-# Public Knack Snippets
+# Public Knack Snippets by Callum Boase
 This repo contains code snippets to assist with developing apps in Knack, as shown in various youtube / social media posts.
 
 ## Found this helpful?
