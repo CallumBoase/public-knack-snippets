@@ -1,5 +1,5 @@
-# public-knack-snippets
-This repo contains code snippets for use with Knack demonstrated in youtube videos / social media posts.
+# Public Knack Snippets
+This repo contains code snippets to assist with developing apps in Knack, as shown in various youtube / social media posts.
 
 ## Found this helpful?
 Subscribe to my [Youtube channel](https://www.youtube.com/channel/UC2903ccHADc3VAaFsAfLGiQ)
