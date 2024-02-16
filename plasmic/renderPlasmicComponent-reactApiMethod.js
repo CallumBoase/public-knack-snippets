@@ -35,10 +35,10 @@ $(document).on('knack-view-render.view_XX', function(event, view){
     useShadowDOM: true,
     
     //project ID of the plasmic project (see the URL of your project in Plasmic Studio)
-    projectId: '23nVaN6xopCUFKwsSQDpSG',
+    projectId: '23nVaN6xopCUFKwsSQDpZZ',
     
     //Public token of your project - obtained via Plasmic studio -> Code button
-    publicToken: 'EbHQY6Hvf1K63S3jgPUIBc1kkViaftdMwpeJPXw5FOWkWUWT5kKGlcdMqbH7MSrAT3bIiRCtieDhIvuAQ',
+    publicToken: 'ZZZQY6Hvf1K63S3jgPUIBc1kkViaftdMwpeJPXw5FOWkWUWT5kKGlcdMqbH7MSrAT3bIiRCtieDhIvuAQ',
     
     //true/false. Whether to render the latest version of your Plasmic page/component even if unpublished. 
     //Recommended: true for development, false for production
