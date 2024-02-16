@@ -16,7 +16,7 @@ $(document).on('knack-view-render.view_XX', async function (event, view, record)
         //The name of your plasmic component or page to render
         componentOrPageName: 'Homepage', 
         //true or false. Indicate whether your component or page has a data query. If true, data will be prefetched & cached before render.
-        hasDataQuery: 
+        hasDataQuery: false
     });
     
 });
