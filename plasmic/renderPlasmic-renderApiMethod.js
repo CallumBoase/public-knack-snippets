@@ -1,3 +1,6 @@
+//Render a plasmic component into a Knack page using the Plasmic render API
+//No extra dependencies, but slower to load when there is data queries & also there's annoying data caching issues
+
 //Example usage of renderPlasmic function, to render a plasmic page called Homepage into a Knack app
 //Replace view_XX with the correct view key of the view that should trigger start of the Plasmic render eg view_5
 
