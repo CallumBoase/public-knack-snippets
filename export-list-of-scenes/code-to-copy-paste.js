@@ -1,3 +1,8 @@
+//In a tab with your Knack app front-end open,
+//open the browser console and copy paste this code, then press enter
+//Copy the resulting output to notepad and save as a .csv file
+//Open the CSV file in Excel or similar
+
 function getSceneCsv() {
     const scenes = Knack.scenes.models.map(scene =>  {
         return {
