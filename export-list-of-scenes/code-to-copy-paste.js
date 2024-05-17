@@ -51,3 +51,4 @@ function getFormattedDate() {
 var csv = getSceneCsv();
 var dateStamp = getFormattedDate();
 downloadCSV(csv, `scenes_${dateStamp}.csv`);
+
