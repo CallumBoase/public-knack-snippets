@@ -1,7 +1,8 @@
-//In a tab with your Knack app front-end open,
-//open the browser console and copy paste this code, then press enter
-//Copy the resulting output to notepad and save as a .csv file
-//Open the CSV file in Excel or similar
+//Open your Knack app front-end in chrome
+//Right click on the page and click "Inspect".
+//On the inspector window that opens, click "Console"
+//Copy this code into the console window & hit enter
+//A CSV will be downloaded to your computer with your Knack scene data
 
 function getSceneCsv() {
     const scenes = Knack.scenes.models.map(scene =>  {
@@ -26,5 +27,27 @@ function getSceneCsv() {
     return convertToCSV(scenes);
 }
 
+function downloadCSV(content, fileName) {
+    const blob = new Blob([content], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+function getFormattedDate() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    return `${year}-${month}-${day} ${hours}:${minutes}`;
+}
+
 var csv = getSceneCsv();
-console.log(csv);
+var dateStamp = getFormattedDate();
+downloadCSV(csv, `scenes_${dateStamp}.csv`);
