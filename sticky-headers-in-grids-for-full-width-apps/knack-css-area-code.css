@@ -1,0 +1,5 @@
+/*MAKE STICKY HEADER WHITE BACKGROUND ON TABLES*/
+/*This ensures that sticky headers on grid (table) views have a white background*/
+.kn-table tr th {
+  background-color: #FFFFFF !important;
+}
