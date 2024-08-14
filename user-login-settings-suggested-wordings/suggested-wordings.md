@@ -3,7 +3,9 @@
 For settings in Knack builder -> Settings -> user logins
 ```
 
-## Inactivity -> Inactivity message
+## Inactivity message
+![image](https://github.com/user-attachments/assets/5df1a6fe-bd80-488c-87a9-3f55f88658cf)
+
 ```html
 You've been inactive for a while. For security reasons we will log you out soon. If you're still here click "remain logged in".
 ```
