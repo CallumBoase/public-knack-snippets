@@ -1,0 +1,80 @@
+/* Copy paste this code into the Knack CSS area*/
+
+/*CUSTOM STYLING FOR MODAL HEADERS*/
+/*Reduce padding, center horizontally and justify to flex-end so looks better as it begins to wrap on smaller screens*/
+.modal-card-head {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*Add some padding around the title to stop it cutting off letters like g and y*/
+/*Also remove style that reduces max-width on smaller screens and remove unecessary height*/
+.modal-card-head .modal-card-title {
+  max-width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  height: fit-content;
+}
+
+/*Custom-style for a modal back button that we add with JS*/
+.modal-card-head .modal-back-btn {
+  background-color: rgba(10, 10, 10, 0.1);
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.modal-card-head .modal-back-btn:hover {
+  background-color: rgba(10, 10, 10, 0.2);
+}
+
+/*Push the icon slightly left in the modal-back-btn span to make it look more centred*/
+.modal-card-head .modal-back-btn i {
+  margin-right: 1px;
+}
+
+/*Tweak the styling of the close modal button to work smoothly with our new layout*/
+.modal-card-head .delete.close-modal {
+  flex-shrink: 0;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
+/*Make the print button flow into a single row within the header by undoing some styling*/
+/*And remove the underline style for cleaner look*/
+.modal-card-head .kn-modal-print {
+  flex-basis: auto;
+  margin-top: 0;
+  margin-right: 6px;
+  text-decoration: none;
+}
+
+/*Re-order elements via CSS
+The print button is put as the last item by Knack in the modal header,
+we move it to 2nd
+To do this we set it's order to 2, and then order of subsequent items to 3, 4 etc*/
+.modal-card-head .kn-modal-print {
+  order: 2;
+}
+
+.modal-card-head .modal-back-btn {
+  order: 3;
+}
+
+.modal-card-head .delete.close-modal {
+  order: 4;
+}
+
+/*END CUSTOM STYLING FOR MODAL HEADERS*/
