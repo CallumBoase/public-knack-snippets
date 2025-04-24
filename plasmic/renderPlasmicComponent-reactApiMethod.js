@@ -6,7 +6,10 @@ KnackInitAsync = function($, callback) {
 
     //External JS scripts to load
     const scripts = [
-        {src: 'https://render-plasmic-into-html.netlify.app/customComponents.js'}
+        // Package for rendering plasmic component into HTML via react API method
+        // See package: https://github.com/CallumBoase/render-plasmic-into-html 
+        // Note that you can change the version to whatever you want (after @ eg @1.0.0)
+        {src: 'https://cdn.jsdelivr.net/gh/CallumBoase/render-plasmic-into-html@1.0.0/public/customComponents.js'}
     ]
 
     loadScripts(
